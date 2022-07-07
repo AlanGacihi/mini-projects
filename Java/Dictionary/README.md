@@ -1,1 +1,1 @@
-Implementation of a dictionary of words
+Implementation of a dictionary of words and meanings
