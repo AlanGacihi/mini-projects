@@ -12,7 +12,7 @@ a) Loading the `lending_data.csv` data from the `Resources` folder into a Pandas
 b) Creating the labels set (`y`) from the loan status column, and then create the features (`X`) Data Frame from the remaining columns.
 c) Check the balance of the label’s variable (`y`).
 
-2. Split the data into training and testing datasets.
+2. Split the data into training and testing datasets.\
 Process
 a)	Creating a Logistic Regression Model with the Original Data
 b) Fitting a logistic regression model by using the training data (`X_train` and `y_train`).
