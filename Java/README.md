@@ -4,23 +4,26 @@
 Credit risk poses a classification problem that’s inherently imbalanced. This is because healthy loans easily outnumber risky loans. The analysis implements various techniques to train and evaluate models with imbalanced classes. It uses a dataset of historical lending activity from a peer-to-peer lending services company to build a model that can identify the creditworthiness of borrowers.
 ### Financial information used
 The dataset is a csv file comprised of financial data derived from a lending services company. The data comprises: loan size, interest rate, borrower income, debt-to-income, number of accounts, derogatory marks, total debt and loan status for each data point.
-The loan status column serves as the labels for the model while the rest of the columns in the dataset serve as the features used in prediction. A value of 0`z in the loan status column means that the loan is healthy. A value of `1` means that the loan has a high risk of defaulting. 
+The loan status column serves as the labels for the model while the rest of the columns in the dataset serve as the features used in prediction. A value of `0` in the loan status column means that the loan is healthy. A value of `1` means that the loan has a high risk of defaulting. 
 ### Stages of the machine learning process
 1.	Splitting the Data into Training and Testing Sets
-2.	Steps:
-Loading the `lending_data.csv` data from the `Resources` folder into a Pandas Data Frame.
-Creating the labels set (`y`) from the loan status column, and then create the features (`X`) Data Frame from the remaining columns.
- Check the balance of the label’s variable (`y`).
-Split the data into training and testing datasets.
-3.	Creating a Logistic Regression Model with the Original Data
-1. Fitting a logistic regression model by using the training data (`X_train` and `y_train`).
-2. Saving the predictions on the testing data labels by using the testing feature data (`X_test`) and the fitted model.
+Process:
+a) Loading the `lending_data.csv` data from the `Resources` folder into a Pandas Data Frame.
+b) Creating the labels set (`y`) from the loan status column, and then create the features (`X`) Data Frame from the remaining columns.
+c) Check the balance of the label’s variable (`y`).
 
-3. Evaluating the model’s performance by calculating the accuracy score of the model, generating a confusion matrix and printing the classification report.
-4.	Predicting a Logistic Regression Model with Resampled Training Data
-1. Using the `RandomOverSampler` module to resample the data. 
-2. Using the `LogisticRegression` classifier and the resampled data to fit the model and make predictions.
-3. Evaluating the model’s performance by calculating the accuracy score of the model, generating a confusion matrix and printing the classification report.
+2. Split the data into training and testing datasets.
+Process
+a)	Creating a Logistic Regression Model with the Original Data
+b) Fitting a logistic regression model by using the training data (`X_train` and `y_train`).
+c) Saving the predictions on the testing data labels by using the testing feature data (`X_test`) and the fitted model.
+d) Evaluating the model’s performance by calculating the accuracy score of the model, generating a confusion matrix and printing the classification report.
+
+3. Predicting a Logistic Regression Model with Resampled Training Data
+a) Using the `RandomOverSampler` module to resample the data. 
+b) Using the `LogisticRegression` classifier and the resampled data to fit the model and make predictions.
+c) Evaluating the model’s performance by calculating the accuracy score of the model, generating a confusion matrix and printing the classification report.
+
 ### Methods used
 Logistic regression Model
 a statistical method that is used for building machine learning models where the dependent variable is dichotomous: i.e., binary. Logistic regression is used to describe data and the relationship between one dependent variable and one or more independent variables. The independent variables can be nominal, ordinal, or of interval type.
