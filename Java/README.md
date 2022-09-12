@@ -6,7 +6,7 @@ Credit risk poses a classification problem that’s inherently imbalanced. This 
 The dataset is a csv file comprised of financial data derived from a lending services company. The data comprises: loan size, interest rate, borrower income, debt-to-income, number of accounts, derogatory marks, total debt and loan status for each data point.
 The loan status column serves as the labels for the model while the rest of the columns in the dataset serve as the features used in prediction. A value of `0` in the loan status column means that the loan is healthy. A value of `1` means that the loan has a high risk of defaulting. 
 ### Stages of the machine learning process
-1.	Splitting the Data into Training and Testing Sets
+1.	Splitting the Data into Training and Testing Sets<br />
   Process:
 a) Loading the `lending_data.csv` data from the `Resources` folder into a Pandas Data Frame.
 b) Creating the labels set (`y`) from the loan status column, and then create the features (`X`) Data Frame from the remaining columns.
