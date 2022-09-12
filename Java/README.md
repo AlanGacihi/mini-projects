@@ -26,10 +26,10 @@ b) Using the `LogisticRegression` classifier and the resampled data to fit the m
 c) Evaluating the model’s performance by calculating the accuracy score of the model, generating a confusion matrix and printing the classification report.
 
 ### Methods used
-Logistic regression Model \
+- Logistic regression Model
 A statistical method that is used for building machine learning models where the dependent variable is dichotomous: i.e., binary. Logistic regression is used to describe data and the relationship between one dependent variable and one or more independent variables. The independent variables can be nominal, ordinal, or of interval type.
 
-Logistic Regression Model with Resampled Training Data \
+- Logistic Regression Model with Resampled Training Data \
 In order to estimate the variability of a linear regression fit, different samples are repeatedly drawn from the training data, each new sample is fitted to a linear regression, and then examine the extent to which the resulting fits differ is then examined.
 
 ## Results
