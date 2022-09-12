@@ -35,20 +35,20 @@ In order to estimate the variability of a linear regression fit, different sampl
 ## Results
 ### Machine Learning model 1
 - **Accuracy**\
-The balanced accuracy score of the first model as computed is 0.9520479254722232.\
+The balanced accuracy score of the first model as computed is 0.9520479254722232.
 - **Precision**\
-Out of all the values that the model predicted were healthy loans, 100% were. 85% of the values were accurately predicted to be high-risk loans.\
+Out of all the values that the model predicted were healthy loans, 100% were. 85% of the values were accurately predicted to be high-risk loans.
 - **Recall**\
 Out of all the values that were high-risk loans, the model predicted this outcome correctly for 91% of those values.\
-Out of all the values that were healthy loans, the model predicted this outcome correctly for 99% of those values.\
+Out of all the values that were healthy loans, the model predicted this outcome correctly for 99% of those values.
 ### Machine Learning model 2
 - **Accuracy**\
-The computed balanced accuracy score of the second model is 0.9936781215845847.\
+The computed balanced accuracy score of the second model is 0.9936781215845847.
 - **Precision**\
-Out of all the values that the model predicted were healthy loans, 100% were. 84% of the values were accurately predicted to be high-risk loans.\
+Out of all the values that the model predicted were healthy loans, 100% were. 84% of the values were accurately predicted to be high-risk loans.
 - **Recall**\
 Out of all the values that were high-risk loans, the model predicted this outcome correctly for 99% of those values.\
-Out of all the values that were healthy loans, the model predicted this outcome correctly for 99% of those values.\
+Out of all the values that were healthy loans, the model predicted this outcome correctly for 99% of those values.
 ## Summary
 Examination of the results of the analysis reveals that the machine learning model 2 with used resampled data is more accurate in predicting the output values. It has higher balanced accuracy score and recall scores.\
 The performance depends on the problem being solved. It is more important to predict the `0`’s than the `1`’s. Prediction of high-risk values reduces the precision of the two machine learning models.
